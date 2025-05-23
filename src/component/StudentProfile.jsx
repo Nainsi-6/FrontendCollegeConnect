@@ -468,7 +468,7 @@ const StudentProfile = ({ profile, profilePhotoFile, coverPhotoFile }) => {
         }
 
         // Refresh the page to show updated photos
-        window.location.reload()
+        // window.location.reload()
       } else {
         setError("Failed to save profile: " + (response.data.message || "Unknown error"))
       }
