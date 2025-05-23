@@ -15,7 +15,7 @@ const ProfilePhoto = ({ src, alt, size = "md", className = "", onClick }) => {
   const DEFAULT_PROFILE_IMAGE = "https://tse2.mm.bing.net/th?id=OIP.T60Aago6tLDepIF5alRigwHaHa&pid=Api&P=0&h=180"
 
   // Process the src URL to ensure it's complete
-  const processedSrc = src ? (src.startsWith("http") ? src : `http://localhost:5005${src}`) : DEFAULT_PROFILE_IMAGE
+  const processedSrc = src ? (src.startsWith("http") ? src : `https://finalbackend-vf9e.onrender.com${src}`) : DEFAULT_PROFILE_IMAGE
 
   return (
     <img

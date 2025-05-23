@@ -29,7 +29,7 @@ export const UserProvider = ({ children }) => {
         // If no stored user but token exists, fetch user data
         const token = localStorage.getItem("token")
         if (token) {
-          const response = await axios.get("http://localhost:5005/api/profiles/me", {
+          const response = await axios.get("https://finalbackend-vf9e.onrender.com/api/profiles/me", {
             headers: {
               Authorization: `Bearer ${token}`,
             },

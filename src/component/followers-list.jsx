@@ -11,7 +11,7 @@ const FollowersList = ({ isOpen, onClose, userId, type }) => {
   const navigate = useNavigate()
 
   // API base URL
-  const API_BASE_URL = "http://localhost:5005"
+  const API_BASE_URL = "https://finalbackend-vf9e.onrender.com"
 
   // Get token from localStorage for authentication
   const token = typeof window !== "undefined" ? localStorage.getItem("token") : null

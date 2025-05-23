@@ -15,7 +15,7 @@ const ConnectionsModal = ({ isOpen, onClose }) => {
   const [loading, setLoading] = useState(true)
 
   // API base URL
-  const API_BASE_URL = "http://localhost:5005"
+  const API_BASE_URL = "https://finalbackend-vf9e.onrender.com"
 
   // Get token from localStorage
   const token = localStorage.getItem("token")

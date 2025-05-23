@@ -373,8 +373,8 @@ const ProfilePage = () => {
 
         // Determine the endpoint based on whether we're viewing our own profile or someone else's
         const endpoint = userId
-          ? `http://localhost:5005/api/profiles/${userId}`
-          : "http://localhost:5005/api/profiles/me"
+          ? `https://finalbackend-vf9e.onrender.com/api/profiles/${userId}`
+          : "https://finalbackend-vf9e.onrender.com/api/profiles/me"
 
         const response = await axios.get(endpoint, { headers })
 

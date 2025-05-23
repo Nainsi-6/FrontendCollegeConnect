@@ -392,7 +392,7 @@ const ProfileHeader = ({
   const [loading, setLoading] = useState(false)
 
   // API base URL
-  const API_BASE_URL = "http://localhost:5005"
+  const API_BASE_URL = "https://finalbackend-vf9e.onrender.com"
 
   // Get the token from localStorage
   const token = typeof window !== "undefined" ? localStorage.getItem("token") : null
@@ -648,7 +648,7 @@ const ProfileHeader = ({
               {/* Connection buttons for viewing other profiles */}
               {userId && userId !== currentUserId && (
                 <div className="flex gap-2 mt-4 md:mt-0">
-                  {connectionStatus === "none" && (
+                  {/* {connectionStatus === "none" && (
                     <button
                       onClick={sendConnectionRequest}
                       disabled={loading}
@@ -661,11 +661,11 @@ const ProfileHeader = ({
                     <button disabled className="px-4 py-2 bg-gray-400 text-white rounded-lg">
                       Request Sent
                     </button>
-                  )}
+                  )} */}
                   <button
                     onClick={startConversation}
                     disabled={loading}
-                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                     className="px-4 py-2 bg-indigo-600 mr-10 text-white rounded-lg hover:bg-indigo-800 mt-5 transition"
                   >
                     {loading ? "Loading..." : "Message"}
                   </button>

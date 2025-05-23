@@ -273,7 +273,7 @@ import axios from "axios"
 // import ProfileHeader from "./profileHeader"
 
 // Set base URL for API requests - this should match your backend server
-const API_BASE_URL = "http://localhost:5005" // This must match your backend PORT in .env
+const API_BASE_URL = "https://finalbackend-vf9e.onrender.com" // This must match your backend PORT in .env
 
 const StudentProfile = ({ profile, profilePhotoFile, coverPhotoFile }) => {
   const navigate = useNavigate()

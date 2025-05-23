@@ -70,7 +70,7 @@ const Messages = () => {
   }
 
   // API base URL
-  const API_BASE_URL = "http://localhost:5005"
+  const API_BASE_URL = "https://finalbackend-vf9e.onrender.com"
 
   // Message suggestions based on context
   const generateSuggestions = (receiverName) => {

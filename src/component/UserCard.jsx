@@ -139,7 +139,7 @@ const UserCard = ({ user, onFollow, isFollowing = false, requestSent = false }) 
   }
 
   // Determine the API base URL
-  const API_BASE_URL = "http://localhost:5005"
+  const API_BASE_URL = "https://finalbackend-vf9e.onrender.com"
 
   // Format profile photo URL correctly
   const getProfilePhotoUrl = () => {

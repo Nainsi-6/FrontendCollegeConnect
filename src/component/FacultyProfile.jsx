@@ -6,7 +6,7 @@ import axios from "axios"
 // import ProfileHeader from "./ProfileHeader"
 
 // Set base URL for API requests
-const API_BASE_URL = "http://localhost:5005" // Make sure this matches your backend server port
+const API_BASE_URL = "https://finalbackend-vf9e.onrender.com" // Make sure this matches your backend server port
 
 // Update the FacultyProfile component to use the passed profile photo and cover photo
 

@@ -73,7 +73,7 @@ const Signup = () => {
     };
 
     try {
-      const res = await fetch('http://localhost:5005/api/auth/signup', {
+      const res = await fetch('https://finalbackend-vf9e.onrender.com/api/auth/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

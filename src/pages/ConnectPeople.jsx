@@ -1220,7 +1220,7 @@ const ConnectPeople = () => {
       setLoading((prev) => ({ ...prev, requests: true }))
 
       // Make the API call
-      const response = await axios.get("http://localhost:5005/api/users/requests", config)
+      const response = await axios.get("https://finalbackend-vf9e.onrender.com/api/users/requests", config)
 
       // Debug the response structure
       console.log("Connection requests API response:", response.data)
@@ -1252,7 +1252,7 @@ const ConnectPeople = () => {
   const fetchSuggestedUsers = async () => {
     try {
       setLoading((prev) => ({ ...prev, suggestions: true }))
-      const response = await axios.get("http://localhost:5005/api/users/suggested", config)
+      const response = await axios.get("https://finalbackend-vf9e.onrender.com/api/users/suggested", config)
 
       console.log("Suggested users response:", response.data)
 
@@ -1281,7 +1281,7 @@ const ConnectPeople = () => {
     try {
       setIsSearching(true)
       setLoading((prev) => ({ ...prev, search: true }))
-      const response = await axios.get(`http://localhost:5005/api/users/search?query=${searchQuery}`, config)
+      const response = await axios.get(`https://finalbackend-vf9e.onrender.com/api/users/search?query=${searchQuery}`, config)
 
       if (response.data && Array.isArray(response.data)) {
         setSearchResults(response.data)
@@ -1311,7 +1311,7 @@ const ConnectPeople = () => {
 
   const handleFollow = async (userId) => {
     try {
-      const response = await axios.post(`http://localhost:5005/api/users/follow/${userId}`, {}, config)
+      const response = await axios.post(`https://finalbackend-vf9e.onrender.com/api/users/follow/${userId}`, {}, config)
       toast.success(response.data?.message || "Connection request sent!")
 
       // Update UI to show request sent
@@ -1331,7 +1331,7 @@ const ConnectPeople = () => {
       console.log(`Responding to request ${requestId} with action: ${action}`)
 
       // Send the request to the backend
-      const response = await axios.post(`http://localhost:5005/api/users/respond/${requestId}`, { action }, config)
+      const response = await axios.post(`https://finalbackend-vf9e.onrender.com/api/users/respond/${requestId}`, { action }, config)
 
       console.log("Request response result:", response.data)
 
